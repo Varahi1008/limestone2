@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class loginpage {
+public class loginpage extends baseclass  {
 	
-	public static WebDriver driver1;
+	
 
-	@FindBy ( id = "shopmen")
+	@FindBy ( id = "shopMen")
 	
 	private WebElement Shopmen;
 
@@ -18,11 +18,11 @@ public class loginpage {
 	}
 
 	
-	public loginpage(WebDriver driver2) {
+	public loginpage() {
 		
-		this.driver1 =driver2;
 		
-		PageFactory.initElements(driver1, this);
+		
+		PageFactory.initElements(driver,this);
 	}
 	
 }

@@ -3,14 +3,26 @@ package com.limestonenew;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class pageobject {
+public class pageobject extends baseclass {
 	
-	public WebDriver driver;
+	
 	
 	public loginpage lp;
+	public Men m;
 	
-	public  pageobject(WebDriver driver2) {
-		this.driver = driver2;
+	public Men getMen() {
+		if(m == null)
+		{
+			m = new Men();
+		}
+		
+		return m;
+	}
+
+	
+
+	public  pageobject() {
+		
 		
 		PageFactory.initElements(driver, this);
 	}
@@ -20,7 +32,7 @@ public class pageobject {
 		if (lp == null)
 			
 		{
-			lp = new loginpage(driver);
+			lp = new loginpage();
 			
 		}
 		

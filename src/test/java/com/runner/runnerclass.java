@@ -2,30 +2,31 @@ package com.runner;
 
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
-
 import com.limestonenew.baseclass;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 
-	
+
 	@RunWith(Cucumber.class)
-	@CucumberOptions(features = "C:\\Users\\jayak\\eclipse-workspace\\limestonenew\\src\\test\\java\\com\\feature\\limestone.feature", glue ="com.stepdefination",
+	@CucumberOptions(features = "C:\\Users\\jayak\\eclipse-workspace\\limestone2\\src\\test\\java\\com\\feature\\limestone.feature",glue="com.stepdefinition",
 	
-			plugin = {"pretty", "html:Reports/lime.html", "json:Reports/lime.json"})
+	tags ="@tag",
+		
+	plugin = {"pretty","html:res/lime.html","json:res/lime.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+	
+	
+	
+public class runnerclass extends baseclass {
+	
 
-	public class runnerclass {
-	public static WebDriver driver;
-	
-	@BeforeClass
-	
-	public static void Weblaunch() {
 		
-		driver= baseclass.launchBrowser("chrome") ;
-		
-	}
+@BeforeClass
+
+public static void Weblaunch() {
+	
+	baseclass.launchBrowser("chrome");
+	
+	
 }
-
-
+}

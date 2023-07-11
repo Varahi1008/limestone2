@@ -317,6 +317,8 @@ public class baseclass {
 	public static void implicitwait(int sec) {
 		driver.manage().timeouts().implicitlyWait(sec, TimeUnit.SECONDS);
 	}
+	
+
 
 //45 web-table AllDatas
 
