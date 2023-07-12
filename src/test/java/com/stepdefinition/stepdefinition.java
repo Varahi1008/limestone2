@@ -19,21 +19,27 @@ public class stepdefinition extends baseclass {
 
 	@Given("User click on shop men")
 	public void user_click_on_shop_men() {
-		implicitwait(2);
+	
+		sleep(3);
 	clickButton(pom.getloginpage().getShopmen());
 	
 	}
 
 	@Given("User click on jean")
 	public void user_click_on_jean() {
-		implicitwait(5);
+	try {
+		Thread.sleep(5000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 		clickButton(pom.getMen().getJean());
 		
 	   }
 
 	@When("Choose the fisrt model")
 	public void choose_the_fisrt_model() {
-	   implicitwait(5);
+	 sleep(5);
 	   try {
 		   clickButton(pom.getMen().getAllJeans().get(0));
 	   }
@@ -49,19 +55,24 @@ public class stepdefinition extends baseclass {
 
 	@Given("User click on first product")
 	public void user_click_on_first_product() {
-	   implicitwait(3);
+	 sleep(5);
 	   clickButton(pom.getMen().getAllItems().get(0));
 	}
 
 	@When("Select size")
 	public void select_size() {
-	    implicitwait(5);
+	    try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	    clickButton(pom.getMen().getSizeThirty());
 	}
 
 	@Then("Add to Cart")
 	public void add_to_cart() {
-		 implicitwait(2);
+		 sleep(5);
 		    clickButton(pom.getMen().getAddCart());
 	}
 

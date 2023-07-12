@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-07-11T22:42:17.059Z",
+        "start_timestamp": "2023-07-12T12:47:18.278Z",
         "line": 5,
         "name": "To search a product for men",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 366109500,
+              "duration": 2501934300,
               "status": "passed"
             },
             "line": 6,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 1349887100,
+              "duration": 3142580000,
               "status": "passed"
             },
             "line": 7,
@@ -52,7 +52,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-07-11T22:42:19.052Z",
+        "start_timestamp": "2023-07-12T12:47:24.257Z",
         "line": 10,
         "name": "Look out for a Jean Model",
         "description": "",
@@ -62,7 +62,7 @@
         "steps": [
           {
             "result": {
-              "duration": 707995900,
+              "duration": 5174096600,
               "status": "passed"
             },
             "line": 11,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 1861712500,
+              "duration": 5108986100,
               "status": "passed"
             },
             "line": 12,
@@ -95,7 +95,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-07-11T22:42:21.646Z",
+        "start_timestamp": "2023-07-12T12:47:34.566Z",
         "line": 15,
         "name": "Grab the needed jean",
         "description": "",
@@ -105,7 +105,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1078464100,
+              "duration": 5100056300,
               "status": "passed"
             },
             "line": 16,
@@ -117,7 +117,7 @@
           },
           {
             "result": {
-              "duration": 880315800,
+              "duration": 3129527100,
               "status": "passed"
             },
             "line": 17,
@@ -129,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 204122200,
+              "duration": 5126185600,
               "status": "passed"
             },
             "line": 18,

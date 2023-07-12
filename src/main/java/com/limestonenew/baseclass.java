@@ -318,6 +318,17 @@ public class baseclass {
 		driver.manage().timeouts().implicitlyWait(sec, TimeUnit.SECONDS);
 	}
 	
+	//44/A thread.sleep
+	
+	public static void sleep(int sec)
+	{
+		try {
+			Thread.sleep(1000*sec);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 
 //45 web-table AllDatas
